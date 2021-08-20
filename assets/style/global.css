@@ -1,0 +1,24 @@
+/* Variables */
+:root {
+  --color-primary: #2196f3;
+  --color-primary-dark: #1976d2;
+  --color-accent: #ff4081;
+  --color-background: #fff;
+  --color-text: #000;
+  --color-text-light: #666;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+div#__nuxt,
+#__layout,
+#__layout > div,
+#app {
+  min-height: 100vh;
+}
