@@ -1,5 +1,7 @@
 <template>
-  <Tutorial/>
+  <section>
+    <h1>App</h1>
+  </section>
 </template>
 
 <script>
