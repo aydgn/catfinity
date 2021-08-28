@@ -1,7 +1,9 @@
 <template>
   <section>
     <!-- Random Cat Image -->
-    <img :src="catUrl" alt="Random Cat Image" class="cat" />
+    <a :href="caturl">
+      <img :src="catUrl" alt="Random Cat Image" class="cat" />
+    </a>
 
     <!-- Get Random Cat Button -->
     <button @click="getCat">Get Random Cat</button>
@@ -45,11 +47,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
 }
 
 img {
   margin: auto;
   max-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 button {

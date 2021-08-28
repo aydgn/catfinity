@@ -36,7 +36,7 @@ export default {
   },
 
   loading: {
-    color: "black",
+    color: "#000",
     height: "4px",
   },
 

@@ -3,6 +3,7 @@
   --color-primary: #2196f3;
   --color-primary-dark: #1976d2;
   --color-accent: #ff4081;
+  --color-accent-dark: #ff1869;
   --color-background: #fff;
   --color-text: #000;
   --color-text-light: #666;
@@ -37,4 +38,20 @@ div#__nuxt,
 .page-leave-active {
   opacity: 0;
   transform: scale(0);
+}
+
+button {
+  background: var(--color-accent);
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+button:hover {
+  background: var(--color-accent-dark);
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(1px);
 }
