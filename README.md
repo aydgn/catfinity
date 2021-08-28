@@ -1,5 +1,8 @@
 # catfinity
 
+<!-- Screenshot Image -->
+![screenshot](screenshot.webp)
+
 ## Build Setup
 
 ```bash
