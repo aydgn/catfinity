@@ -1,4 +1,4 @@
-# catfinity
+# Catfinity 🐱
 
 <!-- Screenshot Image -->
 ![screenshot](screenshot.webp)
