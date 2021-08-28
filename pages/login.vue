@@ -17,10 +17,16 @@
 <script>
 export default {
   layout: "login",
+
   head() {
     return {
       title: "Login",
     }
+  },
+
+  mounted() {
+    console.log("Login status", this.$store.state.loggedIn)
+    console.log("LocalStoreage status", localStorage.getItem("loggedIn"))
   },
 }
 </script>

@@ -1,8 +1,19 @@
 <template>
   <header>
     <h1>Catfinity 🐱</h1>
+    <button @click="logOut">Log Out</button>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    logOut() {
+      this.$store.commit("setLoggedOut", false)
+    },
+  },
+}
+</script>
 
 <style scoped>
 header {

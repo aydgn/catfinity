@@ -4,23 +4,19 @@
       <div class="form__input">
         <!-- USERNAME -->
         <input
-          v-model="userInfo.username"
+          v-model="user.username"
           type="text"
-          placeholder="Username"
+          placeholder='"admin"'
           autofocus
         />
       </div>
       <div class="form__input">
         <!-- PASSWORD -->
-        <input
-          v-model="userInfo.password"
-          type="password"
-          placeholder="Password"
-        />
+        <input v-model="user.password" type="password" placeholder='"123"' />
       </div>
       <div class="form__input">
         <!-- BUTTON -->
-        <button class="form__button" @click="submit(user)">Login</button>
+        <button class="form__button" @click="submit">Login</button>
       </div>
     </div>
   </transition>
@@ -28,19 +24,25 @@
 
 <script>
 export default {
-  props: {
-    submit: {
-      type: Function,
-      required: true,
-    },
-  },
   data() {
     return {
-      userInfo: {
+      user: {
         username: "",
         password: "",
       },
     }
+  },
+  methods: {
+    submit() {
+      if (
+        this.user.username === this.$store.state.user.username &&
+        this.user.password === this.$store.state.user.password
+      ) {
+        this.$store.commit("setLoggedIn", true)
+      } else {
+        alert("Invalid username or password")
+      }
+    },
   },
 }
 </script>
